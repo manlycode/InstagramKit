@@ -26,7 +26,7 @@
  */
 INSTAGRAMKIT_EXTERN NSString *const kID;
 INSTAGRAMKIT_EXTERN NSString *const kCount;
-INSTAGRAMKIT_EXTERN NSString *const kURL;
+INSTAGRAMKIT_EXTERN NSString *const kInstagramURL;
 INSTAGRAMKIT_EXTERN NSString *const kHeight;
 INSTAGRAMKIT_EXTERN NSString *const kWidth;
 INSTAGRAMKIT_EXTERN NSString *const kData;
@@ -55,7 +55,7 @@ INSTAGRAMKIT_EXTERN NSString *const kType;
 INSTAGRAMKIT_EXTERN NSString *const kCreator;
 INSTAGRAMKIT_EXTERN NSString *const kText;
 
-INSTAGRAMKIT_EXTERN NSString *const kUsername;
+INSTAGRAMKIT_EXTERN NSString *const kInstagramUsername;
 INSTAGRAMKIT_EXTERN NSString *const kFullName;
 INSTAGRAMKIT_EXTERN NSString *const kFirstName;
 INSTAGRAMKIT_EXTERN NSString *const kLastName;

@@ -22,7 +22,7 @@
 
 NSString *const kID = @"id";
 NSString *const kCount = @"count";
-NSString *const kURL = @"url";
+NSString *const kInstagramURL = @"url";
 NSString *const kHeight = @"height";
 NSString *const kWidth = @"width";
 NSString *const kData = @"data";
@@ -51,7 +51,7 @@ NSString *const kType = @"type";
 NSString *const kCreator = @"from";
 NSString *const kText = @"text";
 
-NSString *const kUsername = @"username";
+NSString *const kInstagramUsername = @"username";
 NSString *const kFullName = @"full_name";
 NSString *const kFirstName = @"first_name";
 NSString *const kLastName = @"last_name";

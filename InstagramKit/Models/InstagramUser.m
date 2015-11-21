@@ -34,7 +34,7 @@
 
 - (void)updateDetails:(NSDictionary *)info
 {
-    _username = [[NSString alloc] initWithString:info[kUsername]];
+    _username = [[NSString alloc] initWithString:info[kInstagramUsername]];
     _fullName = [[NSString alloc] initWithString:info[kFullName]];
     
     _profilePictureURL = (IKNotNull(info[kProfilePictureURL])) ? [[NSURL alloc] initWithString:info[kProfilePictureURL]] : nil;
@@ -65,7 +65,7 @@
 - (id)initWithCoder:(NSCoder *)decoder
 {
     if ((self = [super initWithCoder:decoder])) {
-        _username = [decoder decodeObjectOfClass:[NSString class] forKey:kUsername];
+        _username = [decoder decodeObjectOfClass:[NSString class] forKey:kInstagramUsername];
         _fullName = [decoder decodeObjectOfClass:[NSString class] forKey:kFullName];
         _profilePictureURL = [decoder decodeObjectOfClass:[NSString class] forKey:kProfilePictureURL];
         _bio = [decoder decodeObjectOfClass:[NSString class] forKey:kBio];
@@ -78,7 +78,7 @@
 {
     [super encodeWithCoder:encoder];
 
-    [encoder encodeObject:_username forKey:kUsername];
+    [encoder encodeObject:_username forKey:kInstagramUsername];
     [encoder encodeObject:_fullName forKey:kFullName];
     [encoder encodeObject:_profilePictureURL forKey:kProfilePictureURL];
     [encoder encodeObject:_bio forKey:kBio];

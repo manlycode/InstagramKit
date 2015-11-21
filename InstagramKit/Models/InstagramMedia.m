@@ -81,26 +81,26 @@
 - (void)initializeImages:(NSDictionary *)imagesInfo
 {
     NSDictionary *thumbInfo = imagesInfo[kThumbnail];
-    _thumbnailURL = (IKNotNull(thumbInfo[kURL])) ? [[NSURL alloc] initWithString:thumbInfo[kURL]] : nil;
+    _thumbnailURL = (IKNotNull(thumbInfo[kInstagramURL])) ? [[NSURL alloc] initWithString:thumbInfo[kInstagramURL]] : nil;
     _thumbnailFrameSize = CGSizeMake([thumbInfo[kWidth] floatValue], [thumbInfo[kHeight] floatValue]);
     
     NSDictionary *lowResInfo = imagesInfo[kLowResolution];
-    _lowResolutionImageURL = IKNotNull(lowResInfo[kURL])? [[NSURL alloc] initWithString:lowResInfo[kURL]] : nil;
+    _lowResolutionImageURL = IKNotNull(lowResInfo[kInstagramURL])? [[NSURL alloc] initWithString:lowResInfo[kInstagramURL]] : nil;
     _lowResolutionImageFrameSize = CGSizeMake([lowResInfo[kWidth] floatValue], [lowResInfo[kHeight] floatValue]);
     
     NSDictionary *standardResInfo = imagesInfo[kStandardResolution];
-    _standardResolutionImageURL = IKNotNull(standardResInfo[kURL])? [[NSURL alloc] initWithString:standardResInfo[kURL]] : nil;
+    _standardResolutionImageURL = IKNotNull(standardResInfo[kInstagramURL])? [[NSURL alloc] initWithString:standardResInfo[kInstagramURL]] : nil;
     _standardResolutionImageFrameSize = CGSizeMake([standardResInfo[kWidth] floatValue], [standardResInfo[kHeight] floatValue]);
 }
 
 - (void)initializeVideos:(NSDictionary *)videosInfo
 {
     NSDictionary *lowResInfo = videosInfo[kLowResolution];
-    _lowResolutionVideoURL = IKNotNull(lowResInfo[kURL]) ? [[NSURL alloc] initWithString:lowResInfo[kURL]] : nil;
+    _lowResolutionVideoURL = IKNotNull(lowResInfo[kInstagramURL]) ? [[NSURL alloc] initWithString:lowResInfo[kInstagramURL]] : nil;
     _lowResolutionVideoFrameSize = CGSizeMake([lowResInfo[kWidth] floatValue], [lowResInfo[kHeight] floatValue]);
     
     NSDictionary *standardResInfo = videosInfo[kStandardResolution];
-    _standardResolutionVideoURL = IKNotNull(standardResInfo[kURL])? [[NSURL alloc] initWithString:standardResInfo[kURL]] : nil;
+    _standardResolutionVideoURL = IKNotNull(standardResInfo[kInstagramURL])? [[NSURL alloc] initWithString:standardResInfo[kInstagramURL]] : nil;
     _standardResolutionVideoFrameSize = CGSizeMake([standardResInfo[kWidth] floatValue], [standardResInfo[kHeight] floatValue]);
 }
 
